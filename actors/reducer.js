@@ -1,9 +1,11 @@
 const BaseActor = require('./base');
 const reducer = require('../common/reduce');
 
+const FILE_INDEXES = [0, 1];
+
 class ReducerActor extends BaseActor {
   async reduce() {
-    const childPromises = Array.from(Array(2).keys()).map(async index => {
+    const childPromises = FILE_INDEXES.map(async index => {
       const combiner = await this.self.createChild('/actors/combiner');
       const result = await combiner.sendAndReceive('combine', index);
       return result;
