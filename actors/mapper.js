@@ -1,4 +1,5 @@
 const BaseActor = require('./base');
+const required = require('../common/required');
 
 class MapperActor extends BaseActor {
   static inject() {
@@ -10,7 +11,7 @@ class MapperActor extends BaseActor {
     this.fileReader = fileReader;
   }
 
-  async map(number) {
+  async map(number = required('number')) {
     const result = await this.fileReader.read(number);
     console.log(`Mapper has read file #${number}`);
 
