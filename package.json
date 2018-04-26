@@ -4,8 +4,7 @@
   "description": "An example of Node.js Actor system usage for MapReduce",
   "main": "index.mjs",
   "scripts": {
-    "start": "node --experimental-modules index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --experimental-modules index.mjs"
   },
   "keywords": [
     "comedy",
