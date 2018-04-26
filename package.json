@@ -1,0 +1,27 @@
+{
+  "name": "actors-map-reduce",
+  "version": "1.0.0",
+  "description": "An example of Node.js Actor system usage for MapReduce",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "comedy",
+    "actor",
+    "mapreduce"
+  ],
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "author": "Yuriy Bogomolov <yuriy.bogomolov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "comedy": "^1.3.0",
+    "eslint": "^4.19.1",
+    "ramda": "^0.25.0",
+    "toobusy-js": "^0.5.1"
+  }
+}
