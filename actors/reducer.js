@@ -9,10 +9,7 @@ class ReducerActor extends BaseActor {
       return result;
     });
 
-    let results = [];
-    for await (const result of childPromises) {
-      results.push(result);
-    }
+    const results = await Promise.all(childPromises);
     const finalResult = reducer(results);
     console.log('Reducer got result', finalResult);
 
