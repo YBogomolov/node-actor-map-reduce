@@ -7,7 +7,7 @@
     "host": [
       "127.0.0.1"
     ],
-    "clusterSize": 2
+    "clusterSize": 1
   },
   "ReducerActor": {
     "mode": "forked"
