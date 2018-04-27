@@ -1,7 +1,7 @@
 const BaseActor = require('./base');
 const reducer = require('../common/reduce');
 
-const FILE_INDEXES = [0, 1];
+const FILE_INDEXES = [1, 2];
 
 class ReducerActor extends BaseActor {
   async reduce() {
