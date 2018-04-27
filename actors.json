@@ -1,0 +1,15 @@
+{
+  "MapperActor": {
+    "mode": "forked"
+  },
+  "CombinerActor": {
+    "mode": "remote",
+    "host": [
+      "127.0.0.1"
+    ],
+    "clusterSize": 2
+  },
+  "ReducerActor": {
+    "mode": "forked"
+  }
+}
